@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Style inputs */
+
+input[type=text],
+textarea {
+    width: 100%;
+    background-color: #f0f0f8;
+    padding: 16px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #3d218f;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+input[type=submit]:hover {
+    background-color: #452d8a;
+}
+
+
+/* Style the container/contact section */
+
+.container {
+    border-radius: 5px;
+    padding: 50px 100px;
+}
+
+
+/* Create two columns that float next to eachother */
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.column {
+    float: left;
+    margin-top: 6px;
+    padding: 20px;
+}
+
+.l-4 {
+    width: 30%;
+}
+
+.l-8 {
+    width: 70%;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* box info */
+
+.border-column {
+    border-right: 2px solid #afafb1;
+    margin-right: 100px;
+}
+
+.box-info {
+    text-align: center;
+    padding: 16px 0;
+}
+
+.box-info h3 {
+    padding: 10px 0;
+}
+
+.box-info p {
+    padding: 5px 0;
+}
+
+.box-info i {
+    color: #382380;
+    font-size: 34px;
+}
+
+
+/* form info */
+
+.text-message {
+    color: #382380;
+}
+
+.text-content {
+    padding: 10px 0;
+}
+
+
+/* map */
+
+.row-map {
+    padding: 50px 0;
+}
+
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 600px) {
+    .column,
+    input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
